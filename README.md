@@ -9,7 +9,7 @@ View the website here:
 https://ndae777.github.io/ndaedzo-portfolio/
 
 ## 📸 Preview
-![Portfolio Screenshot](assets/Screenshot from 2026-04-22 04-45-57.png)
+![Portfolio Screenshot](assets/Screenshot.png)
 ---
 
 ## 🛠️ Tech Stack
