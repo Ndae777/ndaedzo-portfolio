@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,7 +25,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -47,7 +47,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navMenu">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
+          <ul class="navbar-nav mx-auto align-items-lg-center">
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
@@ -576,8 +576,119 @@
     </section>
     <!-- END PROJECTS -->
 
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section_pad">
+      <div class="container">
+        <h2 class="section_title">Certifications</h2>
+        <p class="section_intro">
+          Courses and programmes I've completed alongside my degree.
+        </p>
+
+        <div class="row g-3 reveal">
+          <div class="col-6 col-lg-4">
+            <div class="cert_card">
+              <div class="cert_top">
+                <span class="cert_icon"
+                  ><i class="bi bi-lightbulb-fill"></i
+                ></span>
+                <span class="cert_badge">2026</span>
+              </div>
+              <h3 class="cert_title">
+                Enterprise Design Thinking Practitioner
+              </h3>
+              <p class="cert_sub">IBM</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-4">
+            <div class="cert_card">
+              <div class="cert_top">
+                <span class="cert_icon"
+                  ><i class="bi bi-shield-lock-fill"></i
+                ></span>
+                <span class="cert_badge">2026</span>
+              </div>
+              <h3 class="cert_title">Cybersecurity with AI</h3>
+              <p class="cert_sub">Cyber Security Network (CSN)</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-4">
+            <div class="cert_card">
+              <div class="cert_top">
+                <span class="cert_icon"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                    alt=""
+                /></span>
+                <span class="cert_badge">2025</span>
+              </div>
+              <h3 class="cert_title">Foundational C# with Microsoft</h3>
+              <p class="cert_sub">freeCodeCamp</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-4">
+            <div class="cert_card">
+              <div class="cert_top">
+                <span class="cert_icon"><i class="bi bi-cloud-fill"></i></span>
+                <span class="cert_badge">2025</span>
+              </div>
+              <h3 class="cert_title">AWS Cloud Bootcamp</h3>
+              <p class="cert_sub">Cyber Security Network (CSN)</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-4">
+            <div class="cert_card">
+              <div class="cert_top">
+                <span class="cert_icon"><i class="bi bi-phone-fill"></i></span>
+                <span class="cert_badge">2025</span>
+              </div>
+              <h3 class="cert_title">FNB App Academy</h3>
+              <p class="cert_sub">IT Varsity</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-4">
+            <div class="cert_card">
+              <div class="cert_top">
+                <span class="cert_icon"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                    alt=""
+                /></span>
+                <span class="cert_badge">2024</span>
+              </div>
+              <h3 class="cert_title">Python Bootcamp</h3>
+              <p class="cert_sub">
+                Johannesburg Business School (UJ), with distinction
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- currently studying -->
+        <div class="reveal">
+          <div class="cert_card cert_current">
+            <span class="cert_icon"
+              ><i class="bi bi-mortarboard-fill"></i
+            ></span>
+            <div>
+              <span class="cert_badge">Currently studying</span>
+              <h3 class="cert_title">
+                CS50's Web Programming with Python and JavaScript
+              </h3>
+              <p class="cert_sub">HarvardX</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END CERTIFICATIONS -->
+
     <!-- TECH STACK -->
-    <section id="techstack" class="section_pad">
+    <section id="techstack" class="section_pad section_alt">
       <div class="container">
         <h2 class="section_title">Tech stack</h2>
         <p class="section_intro">Tools I've worked with.</p>
@@ -753,7 +864,7 @@
     <!-- END TECH STACK -->
 
     <!-- ACHIEVEMENTS -->
-    <section id="achievements" class="section_pad section_alt">
+    <section id="achievements" class="section_pad">
       <div class="container">
         <h2 class="section_title">Achievements</h2>
 
@@ -822,108 +933,6 @@
           </div>
         </div>
 
-        <!-- certifications -->
-        <h3 class="sub_title mt_block">Certifications</h3>
-
-        <div class="row g-0 gx-md-5 reveal" id="cert_list">
-          <div class="col-md-6">
-            <div class="cert_row">
-              <span class="cert_icon"
-                ><i class="bi bi-lightbulb-fill"></i
-              ></span>
-              <div class="cert_text">
-                <h4 class="cert_title">
-                  Enterprise Design Thinking Practitioner
-                </h4>
-                <p class="cert_sub">IBM</p>
-              </div>
-              <span class="cert_year">2026</span>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="cert_row">
-              <span class="cert_icon"
-                ><i class="bi bi-shield-lock-fill"></i
-              ></span>
-              <div class="cert_text">
-                <h4 class="cert_title">Cybersecurity with AI</h4>
-                <p class="cert_sub">Cyber Security Network (CSN)</p>
-              </div>
-              <span class="cert_year">2026</span>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="cert_row">
-              <span class="cert_icon"
-                ><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-                  alt=""
-              /></span>
-              <div class="cert_text">
-                <h4 class="cert_title">Foundational C# with Microsoft</h4>
-                <p class="cert_sub">freeCodeCamp</p>
-              </div>
-              <span class="cert_year">2025</span>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="cert_row">
-              <span class="cert_icon"><i class="bi bi-cloud-fill"></i></span>
-              <div class="cert_text">
-                <h4 class="cert_title">AWS Cloud Bootcamp</h4>
-                <p class="cert_sub">Cyber Security Network (CSN)</p>
-              </div>
-              <span class="cert_year">2025</span>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="cert_row">
-              <span class="cert_icon"><i class="bi bi-phone-fill"></i></span>
-              <div class="cert_text">
-                <h4 class="cert_title">FNB App Academy</h4>
-                <p class="cert_sub">IT Varsity</p>
-              </div>
-              <span class="cert_year">2025</span>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="cert_row">
-              <span class="cert_icon"
-                ><img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                  alt=""
-              /></span>
-              <div class="cert_text">
-                <h4 class="cert_title">Python Bootcamp</h4>
-                <p class="cert_sub">
-                  Johannesburg Business School (UJ), with distinction
-                </p>
-              </div>
-              <span class="cert_year">2024</span>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="cert_row">
-              <span class="cert_icon"
-                ><i class="bi bi-mortarboard-fill"></i
-              ></span>
-              <div class="cert_text">
-                <h4 class="cert_title">
-                  CS50's Web Programming with Python and JavaScript
-                </h4>
-                <p class="cert_sub">HarvardX</p>
-              </div>
-              <span class="cert_year in_progress">In progress</span>
-            </div>
-          </div>
-        </div>
-
         <!-- involvement -->
         <h3 class="sub_title mt_block">Involvement</h3>
 
@@ -976,7 +985,7 @@
     <!-- END ACHIEVEMENTS -->
 
     <!-- CONTACT -->
-    <section id="contact" class="section_pad">
+    <section id="contact" class="section_pad section_alt">
       <div class="container">
         <div class="row g-4 g-lg-5 align-items-center">
           <div class="col-lg-6 reveal">

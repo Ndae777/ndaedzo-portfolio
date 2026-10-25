@@ -2,21 +2,16 @@
 
 /* colours used across the whole site */
 :root {
-  --bg: #0e1726;
-  --bg_alt: #111c2f;
-  --surface: #16233a;
-  --line: #24344f;
-  --text: #e8edf4;
-  --muted: #9aa9be;
-  --accent: #f2b33d;
-  --accent_hover: #f6c463;
-  --accent_soft: rgba(242, 179, 61, 0.12);
-
-  /* colours for the stripe on the navbar and behind the photo */
-  --red: #d2493c;
-  --green: #2f9e62;
-  --blue: #3d7fd9;
-  --white: #f4f4f4;
+  --bg: #eceef1; /* light grey page background */
+  --bg_alt: #f8f9fa; /* almost-white sections */
+  --surface: #ffffff; /* cards */
+  --line: #d7dbe0; /* borders */
+  --text: #1f2329; /* main text */
+  --muted: #5a6370; /* lighter text */
+  --accent: #2d5b9a; /* blue for buttons, links and highlights */
+  --accent_hover: #234a80;
+  --accent_soft: rgba(45, 91, 154, 0.1);
+  --green: #1e7f4c;
 }
 
 /* font and base */
@@ -28,7 +23,7 @@ html {
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: "Archivo", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -45,7 +40,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Archivo", "Segoe UI", sans-serif;
+  font-family: "Poppins", "Segoe UI", sans-serif;
   color: var(--text);
 }
 
@@ -85,8 +80,7 @@ button:focus-visible {
 
 .section_title {
   font-size: clamp(1.8rem, 3.5vw, 2.4rem);
-  font-weight: 800;
-  font-stretch: 112%;
+  font-weight: 700;
   letter-spacing: -0.01em;
   margin-bottom: 10px;
 }
@@ -109,7 +103,7 @@ button:focus-visible {
 
 /* NAVBAR */
 #main_nav {
-  background-color: rgba(14, 23, 38, 0.88);
+  background-color: rgba(247, 248, 250, 0.88);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid transparent;
   padding: 14px 0 10px;
@@ -119,37 +113,15 @@ button:focus-visible {
     border-color 0.3s;
 }
 
-/* the colour stripe at the top of the navbar — it slides in on load */
-#main_nav::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(
-    90deg,
-    var(--red) 0 20%,
-    var(--accent) 20% 40%,
-    var(--green) 40% 60%,
-    var(--blue) 60% 80%,
-    var(--white) 80% 100%
-  );
-  transform: scaleX(0);
-  transform-origin: left;
-  animation: stripeIn 0.9s ease forwards;
-}
-
 #main_nav.scrolled {
-  background-color: rgba(14, 23, 38, 0.97);
+  background-color: rgba(247, 248, 250, 0.97);
   border-bottom-color: var(--line);
   padding: 10px 0 6px;
 }
 
 .navbar-brand {
   font-size: 1.35rem;
-  font-weight: 800;
-  font-stretch: 125%;
+  font-weight: 700;
   color: var(--text) !important;
   transition: color 0.2s;
 }
@@ -253,10 +225,9 @@ button:focus-visible {
 
 #hero_name {
   font-size: clamp(2.6rem, 7vw, 5rem);
-  font-weight: 800;
-  font-stretch: 125%;
+  font-weight: 700;
   line-height: 1.02;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   margin-bottom: 18px;
   opacity: 0;
   animation: fadeUp 0.7s ease forwards 0.45s;
@@ -387,14 +358,7 @@ button:focus-visible {
   width: 100%;
   height: 100%;
   border-radius: 14px;
-  background: repeating-linear-gradient(
-    180deg,
-    var(--red) 0 12px,
-    var(--accent) 12px 24px,
-    var(--green) 24px 36px,
-    var(--blue) 36px 48px,
-    var(--white) 48px 60px
-  );
+  border: 2px solid var(--accent);
   animation: frameOut 0.8s ease forwards 0.9s;
 }
 
@@ -494,8 +458,7 @@ button:focus-visible {
 
 .feature_title {
   font-size: 1.7rem;
-  font-weight: 800;
-  font-stretch: 112%;
+  font-weight: 700;
   margin-bottom: 2px;
 }
 
@@ -677,7 +640,7 @@ button:focus-visible {
 
 /* makes the dark logos (Django, AWS) white so you can see them */
 .light_icon {
-  filter: brightness(0) invert(1);
+  filter: none;
 }
 
 .tech_name {
@@ -873,7 +836,7 @@ button:focus-visible {
 
 #copy_btn.copied {
   border-color: var(--green);
-  color: #6fd39c;
+  color: var(--green);
 }
 
 #contact_list li + li {
@@ -1051,7 +1014,7 @@ button:focus-visible {
 /* TABLET AND MOBILE MENU */
 @media screen and (max-width: 991.98px) {
   #main_nav {
-    background-color: rgba(14, 23, 38, 0.98);
+    background-color: rgba(247, 248, 250, 0.98);
   }
 
   #navMenu {
@@ -1087,10 +1050,9 @@ button:focus-visible {
 
   #hero_status {
     font-size: 13px;
+    border-radius: 12px;
   }
-
   #hero_name {
-    font-stretch: 108%;
   }
 
   #hero_buttons a {
@@ -1152,5 +1114,70 @@ button:focus-visible {
   .js_on .reveal {
     opacity: 1;
     transform: none;
+  }
+}
+
+/* CERTIFICATION CARDS */
+.cert_card {
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px;
+  height: 100%;
+  transition:
+    transform 0.2s,
+    border-color 0.2s;
+}
+
+.cert_card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.cert_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.cert_badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  background-color: var(--accent_soft);
+  padding: 3px 10px;
+  border-radius: 50px;
+}
+
+.cert_card .cert_title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* the "currently studying" card is wider with a dashed border */
+.cert_current {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+  border-style: dashed;
+}
+
+.cert_current .cert_badge {
+  margin-bottom: 6px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .cert_card {
+    padding: 14px;
+  }
+  .cert_card .cert_title {
+    font-size: 14px;
+  }
+  .cert_top {
+    margin-bottom: 10px;
   }
 }
